@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - woodHandcraft</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F5; /* Off-White Birch */
+            color: #333;
+        }
+        .text-classic-pine-brown { color: #6D4C41; }
+        .bg-classic-pine-brown { background-color: #6D4C41; }
+        .text-workshop-gray { color: #757575; }
+        .bg-workshop-gray { background-color: #757575; }
+        .text-forest-green { color: #4CAF50; }
+        .bg-forest-green { background-color: #4CAF50; }
+        .text-amber-accent { color: #FFA726; }
+        .bg-amber-accent { background-color: #FFA726; }
+        .border-classic-pine-brown { border-color: #6D4C41; }
+        .hover-bg-classic-pine-brown:hover { background-color: #6D4C41; }
+        .hover-text-classic-pine-brown:hover { color: #6D4C41; }
+
+        /* Custom styles for content sections */
+        .content-section p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .content-section h1, .content-section h2, .content-section h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #6D4C41;
+        }
+        .content-section ul {
+            margin-left: 1.5rem;
+            list-style-type: disc;
+            margin-bottom: 1rem;
+        }
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-off-white-birch shadow-md py-4">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2 mb-4 md:mb-0">
+                <svg class="w-8 h-8 text-classic-pine-brown" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 1.5v14.5a1 1 0 01-1 1H9a1 1 0 01-1-1V1.5a1 1 0 01.7-.954l3-1a1 1 0 01.6 0zM5.22 4.22a.75.75 0 011.06 0L10 7.94l3.72-3.72a.75.75 0 011.06 1.06L11.06 9l3.72 3.72a.75.75 0 11-1.06 1.06L10 10.06l-3.72 3.72a.75.75 0 01-1.06-1.06L8.94 9l-3.72-3.72a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-2xl font-bold text-classic-pine-brown">woodHandcraft</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-workshop-gray text-lg font-medium">
+                    <li><a href="index.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Home</a></li>
+                    <li><a href="privacy.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Contact Us -->
+    <main class="container mx-auto px-4 py-12 content-section">
+        <section class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">Contact Us</h1>
+            <p class="text-lg text-workshop-gray mb-8 text-center">
+                We'd love to hear from you! Whether you have a question about our products, need assistance with a DIY kit, want to inquire about workshops, or have a custom project in mind, our team is ready to help.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Contact Information -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Get in Touch</h3>
+                    <p class="text-workshop-gray mb-2"><strong>Email:</strong> <a href="mailto:info@woodhandcraft.com" class="text-amber-accent hover:underline">info@woodhandcraft.com</a></p>
+                    <p class="text-workshop-gray mb-2"><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p class="text-workshop-gray mb-2"><strong>Address:</strong> 123 Timber Lane, Craftsville, CA 90210, USA</p>
+                    <p class="text-workshop-gray mt-4">
+                        Our customer service team is available Monday to Friday, 9:00 AM - 5:00 PM (Pacific Time). We strive to respond to all inquiries within 24-48 business hours.
+                    </p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Send Us a Message</h3>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-workshop-gray text-sm font-bold mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-classic-pine-brown" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-workshop-gray text-sm font-bold mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-classic-pine-brown" placeholder="john.doe@example.com" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-workshop-gray text-sm font-bold mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-classic-pine-brown" placeholder="Inquiry about a product..." required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-workshop-gray text-sm font-bold mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-classic-pine-brown" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="bg-amber-accent hover:bg-opacity-90 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition-all duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <p class="text-lg text-workshop-gray text-center mt-8">
+                We value your feedback and look forward to assisting you. Your satisfaction is our priority, and we are dedicated to providing excellent customer service.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-classic-pine-brown text-white py-10 rounded-t-lg shadow-inner">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <!-- Address and Contact -->
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold mb-2">woodHandcraft</h3>
+                <p class="text-sm">123 Timber Lane, Craftsville, CA 90210, USA</p>
+                <p class="text-sm">Email: info@woodhandcraft.com</p>
+                <p class="text-sm">Phone: +1 (555) 123-4567</p>
+            </div>
+
+            <!-- Footer Navigation -->
+            <nav class="mb-6 md:mb-0">
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-lg font-medium">
+                    <li><a href="privacy.html" class="hover:text-amber-accent transition-colors duration-200">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-amber-accent transition-colors duration-200">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="hover:text-amber-accent transition-colors duration-200">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="hover:text-amber-accent transition-colors duration-200">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Copyright -->
+            <div>
+                <p class="text-sm">&copy; 2025 woodHandcraft. All rights reserved.</p>
+                <p class="text-xs mt-1">Pure Craftsmanship. Real Wood.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

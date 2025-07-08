@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Policy - woodHandcraft</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F5; /* Off-White Birch */
+            color: #333;
+        }
+        .text-classic-pine-brown { color: #6D4C41; }
+        .bg-classic-pine-brown { background-color: #6D4C41; }
+        .text-workshop-gray { color: #757575; }
+        .bg-workshop-gray { background-color: #757575; }
+        .text-forest-green { color: #4CAF50; }
+        .bg-forest-green { background-color: #4CAF50; }
+        .text-amber-accent { color: #FFA726; }
+        .bg-amber-accent { background-color: #FFA726; }
+        .border-classic-pine-brown { border-color: #6D4C41; }
+        .hover-bg-classic-pine-brown:hover { background-color: #6D4C41; }
+        .hover-text-classic-pine-brown:hover { color: #6D4C41; }
+
+        /* Custom styles for content sections */
+        .content-section p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .content-section h1, .content-section h2, .content-section h3, .content-section h4 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #6D4C41;
+        }
+        .content-section ul {
+            margin-left: 1.5rem;
+            list-style-type: disc;
+            margin-bottom: 1rem;
+        }
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Cookie Consent Dialog */
+        #cookie-consent-dialog {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #6D4C41; /* Classic Pine Brown */
+            color: #F5F5F5; /* Off-White Birch */
+            padding: 1.5rem;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+        #cookie-consent-dialog p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        #cookie-consent-dialog .buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #cookie-consent-dialog button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Full rounded */
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        #cookie-consent-dialog #accept-cookies {
+            background-color: #FFA726; /* Amber Accent */
+            color: #FFFFFF;
+            border: none;
+        }
+        #cookie-consent-dialog #accept-cookies:hover {
+            background-color: #e0911a;
+        }
+        #cookie-consent-dialog #decline-cookies {
+            background-color: #757575; /* Workshop Gray */
+            color: #FFFFFF;
+            border: none;
+        }
+        #cookie-consent-dialog #decline-cookies:hover {
+            background-color: #5a5a5a;
+        }
+        #cookie-consent-dialog a {
+            color: #FFA726; /* Amber Accent */
+            text-decoration: underline;
+        }
+        #cookie-consent-dialog a:hover {
+            color: #e0911a;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-off-white-birch shadow-md py-4">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2 mb-4 md:mb-0">
+                <svg class="w-8 h-8 text-classic-pine-brown" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 1.5v14.5a1 1 0 01-1 1H9a1 1 0 01-1-1V1.5a1 1 0 01.7-.954l3-1a1 1 0 01.6 0zM5.22 4.22a.75.75 0 011.06 0L10 7.94l3.72-3.72a.75.75 0 011.06 1.06L11.06 9l3.72 3.72a.75.75 0 11-1.06 1.06L10 10.06l-3.72 3.72a.75.75 0 01-1.06-1.06L8.94 9l-3.72-3.72a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-2xl font-bold text-classic-pine-brown">woodHandcraft</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-workshop-gray text-lg font-medium">
+                    <li><a href="index.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Home</a></li>
+                    <li><a href="privacy.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Cookies Policy -->
+    <main class="container mx-auto px-4 py-12 content-section">
+        <section class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">Cookies Policy</h1>
+            <p class="text-lg text-workshop-gray mb-4">
+                This Cookies Policy explains how woodHandcraft ("we," "us," or "our") uses cookies and similar technologies on our website, <a href="index.html" class="text-amber-accent hover:underline">woodhandcraft.com</a> (the "Site"). By continuing to browse or use our Site, you are agreeing to our use of cookies in accordance with this policy. If you do not agree to our use of cookies, you should set your browser settings accordingly or not use our Site.
+            </p>
+            <p class="text-lg text-workshop-gray mb-4">
+                Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work, or work more efficiently, as well as to provide reporting information. Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser.
+            </p>
+
+            <h2 class="text-3xl font-bold text-classic-pine-brown mb-4">1. How We Use Cookies</h2>
+            <p class="text-workshop-gray mb-4">
+                We use cookies for several reasons, including:
+            </p>
+            <ul class="list-disc ml-6 text-workshop-gray mb-4">
+                <li><strong>Essential Website Functionality:</strong> To enable core features like secure login, shopping cart functionality, and remembering your preferences. Without these, the site would not function correctly.</li>
+                <li><strong>Website Performance and Analytics:</strong> To understand how you interact with our Site, which pages are most popular, and to identify areas for improvement. This helps us enhance your browsing experience.</li>
+                <li><strong>Personalization:</strong> To remember your choices (like language or region) and provide enhanced, more personal features.</li>
+                <li><strong>Advertising and Marketing:</strong> To deliver relevant advertisements and measure the effectiveness of our marketing campaigns.</li>
+            </ul>
+
+            <h2 class="text-3xl font-bold text-classic-pine-brown mb-4">2. Types of Cookies We Use</h2>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">2.1. Necessary Cookies</h3>
+            <p class="text-workshop-gray mb-4">
+                These cookies are essential for the operation of our Site. They enable you to navigate the website and use its features, such as accessing secure areas of the Site and adding items to your shopping cart. Without these cookies, services like online shopping or e-billing cannot be provided. They are typically set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms. You cannot opt-out of these cookies as they are fundamental to the Site's functionality. Blocking these cookies will likely result in the Site not performing as expected. They do not store any personally identifiable information.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                Examples of necessary cookies include:
+            </p>
+            <ul class="list-disc ml-6 text-workshop-gray mb-4">
+                <li><strong>Session Cookies:</strong> Used to maintain your session as you navigate the website, ensuring that you remain logged in and your shopping cart contents are remembered. These are temporary and expire when you close your browser.</li>
+                <li><strong>Security Cookies:</strong> Help to identify and prevent security risks. For example, they may detect multiple failed login attempts to protect your account from brute-force attacks.</li>
+                <li><strong>Load Balancing Cookies:</strong> Distribute network traffic across multiple servers to ensure the website remains responsive and available, even under heavy load.</li>
+                <li><strong>Consent Cookies:</strong> Record your cookie preferences, ensuring that your choices are respected on subsequent visits.</li>
+                <li><strong>User Input Cookies:</strong> Used to track user input, such as when filling out forms or adding items to a shopping cart.</li>
+                <li><strong>Authentication Cookies:</strong> Identify you as a logged-in user and enable you to access restricted areas of the site.</li>
+                <li><strong>Shopping Cart Cookies:</strong> Store information about the items you've added to your shopping cart, allowing you to proceed with your purchase.</li>
+                <li><strong>Language Preference Cookies:</strong> Remember your preferred language settings for the website.</li>
+                <li><strong>Currency Preference Cookies:</strong> Store your chosen currency for displaying prices.</li>
+                <li><strong>Fraud Prevention Cookies:</strong> Help detect and prevent fraudulent activities on the website, such as suspicious transactions.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">2.2. Performance and Analytics Cookies</h3>
+            <p class="text-workshop-gray mb-4">
+                These cookies collect information about how visitors use our Site, such as which pages visitors go to most often, and if they get error messages from web pages. These cookies do not collect information that identifies a visitor. All information these cookies collect is aggregated and therefore anonymous. It is only used to improve how a website works. By understanding user behavior, we can optimize content, streamline navigation, and enhance overall user satisfaction. These cookies are crucial for us to make data-driven decisions about site improvements.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                Examples of performance and analytics cookies include:
+            </p>
+            <ul class="list-disc ml-6 text-workshop-gray mb-4">
+                <li><strong>Google Analytics Cookies:</strong> Used to collect information about how visitors use our Site. We use the information to compile reports and to help us improve the Site. These cookies collect information in an anonymous form, including the number of visitors to the Site, where visitors have come to the Site from, and the pages they visited.</li>
+                <li><strong>Heatmap and Session Recording Cookies:</strong> Tools that visually represent user interaction on pages, showing where users click, scroll, and spend time, helping us identify usability issues.</li>
+                <li><strong>A/B Testing Cookies:</strong> Used to test different versions of a webpage to see which performs better in terms of user engagement or conversion.</li>
+                <li><strong>Content Popularity Cookies:</strong> Track which articles, products, or sections of the site are most frequently viewed, informing content strategy.</li>
+                <li><strong>Site Speed Optimization Cookies:</strong> Help measure and improve the loading speed of various elements on the website.</li>
+                <li><strong>Error Tracking Cookies:</strong> Log errors or broken links encountered by users, assisting in quick resolution and site maintenance.</li>
+                <li><strong>Device Information Cookies:</strong> Collect anonymous data about the type of device (desktop, mobile, tablet) and browser used to access the site, helping optimize responsiveness.</li>
+                <li><strong>Referral Source Cookies:</strong> Track how users arrive at our site (e.g., from a search engine, social media, or another website), informing marketing efforts.</li>
+                <li><strong>Conversion Tracking Cookies:</strong> Measure the effectiveness of specific calls to action or marketing campaigns by tracking user actions like purchases or sign-ups.</li>
+                <li><strong>User Flow Analysis Cookies:</strong> Provide insights into the typical paths users take through the website, identifying potential bottlenecks or areas for improved navigation.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">2.3. Functionality Cookies</h3>
+            <p class="text-workshop-gray mb-4">
+                These cookies allow the Site to remember choices you make (such as your user name, language, or the region you are in) and provide enhanced, more personal features. For instance, a website may be able to provide you with local weather reports or traffic news by storing in a cookie the region in which you are currently located. These cookies can also be used to remember changes you have made to text size, fonts, and other parts of web pages that you can customize. They may also be used to provide services you have asked for, such as watching a video or commenting on a blog. The information these cookies collect may be anonymized and they cannot track your browsing activity on other websites.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                Examples of functionality cookies include:
+            </p>
+            <ul class="list-disc ml-6 text-workshop-gray mb-4">
+                <li><strong>Remember Me Cookies:</strong> Allow you to stay logged in on subsequent visits, saving you the hassle of re-entering credentials.</li>
+                <li><strong>Personalized Content Cookies:</strong> Deliver content tailored to your past interactions or preferences, such as recommending products based on your browsing history.</li>
+                <li><strong>Chat Support Cookies:</strong> Enable live chat functionality and remember your chat history for a seamless support experience.</li>
+                <li><strong>Video Player Preference Cookies:</strong> Store your preferred video quality settings or playback volume.</li>
+                <li><strong>Social Media Sharing Cookies:</strong> Facilitate easy sharing of content from our Site to your social media platforms.</li>
+                <li><strong>Accessibility Preference Cookies:</strong> Remember your accessibility settings, such as high contrast mode or larger font sizes.</li>
+                <li><strong>Recently Viewed Items Cookies:</strong> Display products you've recently looked at for easy recall.</li>
+                <li><strong>Wishlist Cookies:</strong> Store items you've added to a wishlist, even if you're not logged in.</li>
+                <li><strong>Geographic Location Cookies:</strong> Provide localized content or currency based on your detected location.</li>
+                <li><strong>Form Auto-fill Cookies:</strong> Remember information you've previously entered into forms (e.g., name, address) to speed up future submissions.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">2.4. Targeting and Advertising Cookies</h3>
+            <p class="text-workshop-gray mb-4">
+                These cookies are used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaign. They are usually placed by advertising networks with the website operator’s permission. They remember that you have visited a website and this information is shared with other organizations such as advertisers. Quite often, targeting or advertising cookies will be linked to site functionality provided by the other organization. These cookies help us understand your interests based on your browsing behavior, so we can show you more relevant ads on our Site and across the internet.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                Examples of targeting and advertising cookies include:
+            </p>
+            <ul class="list-disc ml-6 text-workshop-gray mb-4">
+                <li><strong>Retargeting Cookies:</strong> Show you ads for products you've viewed on our Site when you visit other websites.</li>
+                <li><strong>Affiliate Marketing Cookies:</strong> Track whether you arrived at our Site via an affiliate link, allowing us to compensate our partners.</li>
+                <li><strong>Ad Campaign Performance Cookies:</strong> Measure how many clicks an ad receives and how many conversions result from it.</li>
+                <li><strong>Demographic Targeting Cookies:</strong> Collect anonymous demographic data to help advertisers target ads more effectively.</li>
+                <li><strong>Social Media Advertising Cookies:</strong> Used by social media platforms to deliver targeted ads to you based on your interactions with our content on their platforms.</li>
+                <li><strong>Cross-Site Tracking Cookies:</strong> Follow your browsing activity across different websites to build a profile of your interests for advertising purposes.</li>
+                <li><strong>Ad Frequency Capping Cookies:</strong> Prevent you from seeing the same advertisement too many times.</li>
+                <li><strong>Ad Attribution Cookies:</strong> Help us understand which marketing channels (e.g., email, social media, search) contribute to sales or leads.</li>
+                <li><strong>Personalized Ad Delivery Cookies:</strong> Tailor the advertisements you see based on your inferred interests and browsing history.</li>
+                <li><strong>Audience Segmentation Cookies:</strong> Group users into segments based on shared characteristics for more precise ad targeting.</li>
+            </ul>
+
+            <h2 class="text-3xl font-bold text-classic-pine-brown mb-4">3. Third-Party Cookies</h2>
+            <p class="text-workshop-gray mb-4">
+                In addition to our own cookies, we may also use various third-parties cookies to report usage statistics of the Service, deliver advertisements on and through the Service, and so on. These third-party cookies are set by domains other than woodhandcraft.com. For example, Google Analytics sets cookies to gather data about website usage, and social media platforms might set cookies if you use their sharing buttons on our Site. We do not control these third-party cookies, and they are subject to the respective third parties' privacy policies. We encourage you to review the privacy policies of any third-party services you interact with.
+            </p>
+
+            <h2 class="text-3xl font-bold text-classic-pine-brown mb-4">4. Your Choices Regarding Cookies</h2>
+            <p class="text-workshop-gray mb-4">
+                You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by clicking on the appropriate buttons in the cookie consent dialog box at the bottom of our Site.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                Most web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove or reject browser cookies. To do this, follow the instructions provided by your browser (usually located within the "Help," "Tools," or "Edit" menu). Please be aware that removing or rejecting cookies could affect the availability and functionality of our Site. For example, you may not be able to log in, make purchases, or use certain interactive features.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                You can also opt-out of interest-based advertising from some third-party advertisers by visiting the Network Advertising Initiative (<a href="https://optout.networkadvertising.org/" target="_blank" class="text-amber-accent hover:underline">NAI</a>) or the Digital Advertising Alliance (<a href="https://optout.aboutads.info/" target="_blank" class="text-amber-accent hover:underline">DAA</a>) opt-out tools.
+            </p>
+
+            <h2 class="text-3xl font-bold text-classic-pine-brown mb-4">5. Detailed Contact-Related Points and User Interaction</h2>
+            <p class="text-lg text-workshop-gray mb-8 text-center">
+                At woodHandcraft, we believe in clear communication and robust support for our community. Below are 40 detailed points outlining various ways you can interact with us, seek support, or engage with our services, often facilitated by or related to our use of cookies and data management practices.
+            </p>
+
+            <!-- Detailed Contact Points (40 points, ~10 lines each) -->
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 1: General Inquiries via Email</h3>
+            <p class="text-workshop-gray">
+                For any overarching questions about woodHandcraft, our mission, or general operations, email is often the most efficient starting point. Our dedicated general inquiry email address, <a href="mailto:info@woodhandcraft.com" class="text-amber-accent hover:underline">info@woodhandcraft.com</a>, is monitored regularly by our administrative team. This channel is ideal for non-urgent questions that do not require immediate technical support or order-specific details. When sending an email, please provide a clear subject line and concise message to help us direct your query to the most appropriate department. We strive to acknowledge all general inquiries within 24 business hours and provide a substantive response within 48-72 business hours. Your email address may be temporarily stored to facilitate communication regarding your query.
+            </p>
+            <p class="text-workshop-gray">
+                This email contact point is designed for broad questions that don't fit into specific categories like order support or technical assistance. It allows us to manage and categorize incoming communications effectively, ensuring that your message reaches the right person within our organization. We encourage users to use this email for feedback, partnership opportunities, or general comments about their experience with woodHandcraft. Our goal is to be as accessible as possible, and this general email serves as a central hub for all non-specialized communications. We appreciate your patience as we process your inquiry, ensuring a thoughtful and comprehensive response.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 2: Product Support for Handmade Goods</h3>
+            <p class="text-workshop-gray">
+                If you have questions about a specific handmade wooden product you've purchased or are considering purchasing, our product support team is ready to assist. This includes inquiries about wood types, finishes, dimensions, care instructions, or potential customization options. Please reference the product name or SKU if available, or provide a clear description of the item. This helps our team quickly access relevant information and provide accurate answers. We aim to provide detailed insights into the craftsmanship and materials, ensuring you feel confident in your purchase. Your interaction here might involve cookies that remember your viewed products to offer relevant support.
+            </p>
+            <p class="text-workshop-gray">
+                Our product support extends beyond initial purchase queries. If you encounter any issues with a handmade item, such as concerns about its durability or appearance over time, please reach out. We stand by the quality of our craftsmanship and will work with you to address any legitimate concerns. Providing photos of the product can often expedite the support process. This dedicated support ensures that your investment in woodHandcraft products is protected and that you receive the assistance needed to enjoy your items for years to come. We believe in building lasting relationships with our customers through reliable and responsive support.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 3: DIY Kit Technical Assistance</h3>
+            <p class="text-workshop-gray">
+                For users working on our DIY woodworking kits, technical assistance is available. This covers questions about specific steps in the instruction guide, tool usage, material properties within the kit, or troubleshooting common challenges. When contacting us for DIY kit support, please specify the exact kit name and the step number or section you are struggling with. Providing a brief description of the issue, and ideally a photo or short video, can significantly help our instructors understand and diagnose the problem. Our goal is to ensure your DIY project is a success and a rewarding learning experience.
+            </p>
+            <p class="text-workshop-gray">
+                Our instructors are experienced artisans who understand the common hurdles faced by beginners and intermediate woodworkers. They can offer practical advice, alternative approaches, and encouragement to help you overcome obstacles. This support is designed to complement the kit instructions, providing a personalized touch to your learning journey. We want you to feel confident and supported throughout your crafting process, ensuring that you can complete your project with satisfaction. Your queries help us refine our kit instructions and anticipate future user needs, contributing to a better experience for everyone.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 4: Workshop Enrollment and Scheduling</h3>
+            <p class="text-workshop-gray">
+                If you have questions regarding workshop availability, scheduling, prerequisites, or the enrollment process, please contact our workshop coordination team. We can provide details on upcoming classes, capacity limits, and any specific requirements for participation. This includes information on both in-person local classes and virtual workshop options. Our team can also assist with group bookings or private lesson inquiries. We aim to make the enrollment process as smooth as possible, ensuring you find the perfect learning opportunity to suit your schedule and skill level.
+            </p>
+            <p class="text-workshop-gray">
+                The workshop coordination team is also responsible for managing waitlists and notifying interested participants when new dates are added or spots become available. We can guide you through the online booking calendar and explain payment options. Your engagement with this contact point helps us understand demand for certain workshops and plan our curriculum accordingly. We are dedicated to providing accessible and engaging woodworking education, and your inquiries help us fulfill that mission effectively.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 5: Custom Project Consultations</h3>
+            <p class="text-workshop-gray">
+                For those interested in commissioning a custom wooden project, we offer dedicated consultation services. This initial contact point allows you to discuss your vision, functional requirements, desired wood species, and budget with our design team. We encourage you to share any sketches, inspiration photos, or specific dimensions you have in mind. Our experts will provide preliminary feasibility assessments and discuss the collaborative design process. This consultation is crucial for understanding your needs and ensuring we can bring your unique wooden piece to life with precision and artistry.
+            </p>
+            <p class="text-workshop-gray">
+                During the consultation, we can also provide insights into different wood properties, suitable finishes, and estimated timelines for your custom project. This is a no-obligation discussion designed to explore possibilities and provide you with a clear understanding of what woodHandcraft can offer. Our goal is to make the custom creation process transparent and exciting, resulting in a bespoke piece that perfectly matches your expectations and enhances your space. We value your unique ideas and are committed to transforming them into tangible, cherished heirlooms.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 6: Order Status and Shipping Inquiries</h3>
+            <p class="text-workshop-gray">
+                If you have questions about the status of an existing order, including tracking information, estimated delivery dates, or shipping delays, please contact our order fulfillment team. Provide your order number for quick assistance. We work diligently to process and ship orders promptly, but understand that unforeseen delays can occur. Our team can provide updates from shipping carriers and help troubleshoot any delivery issues. We aim to keep you informed every step of the way, ensuring a smooth delivery experience for your woodHandcraft purchases.
+            </p>
+            <p class="text-workshop-gray">
+                This contact point is also for inquiries regarding international shipping, customs duties, or specific delivery instructions. We will do our best to provide accurate information and guidance regarding any additional fees or requirements for international shipments. Your satisfaction with the delivery of your order is important to us, and our team is committed to resolving any shipping-related concerns efficiently. We understand the anticipation of receiving a handcrafted item and strive to make the delivery process as transparent and reliable as possible.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 7: Returns and Refunds</h3>
+            <p class="text-workshop-gray">
+                For inquiries related to product returns, exchanges, or refunds, please refer to our detailed Refund and Return Policy first. If your question is not addressed there, or if you need to initiate a return, contact our customer service team. Provide your order number and a clear explanation of the reason for the return or refund request. We will guide you through the process, including eligibility criteria, return shipping instructions, and expected processing times for refunds. Our aim is to ensure a fair and straightforward resolution for any eligible returns.
+            </p>
+            <p class="text-workshop-gray">
+                We are committed to customer satisfaction and will work with you to address any issues in accordance with our stated policies. Understanding the specific circumstances of your request helps us to provide the most appropriate solution. Please note that certain items, such as personalized products or digital content, may have specific return limitations. Our team will clarify these details and ensure you understand the steps involved in the return or refund process. We value your business and strive to make every interaction a positive one, even when issues arise.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 8: Website Technical Issues</h3>
+            <p class="text-workshop-gray">
+                If you encounter any technical difficulties while browsing our Site, such as broken links, loading errors, account login problems, or issues with the shopping cart, please report them to our technical support team. Provide a detailed description of the issue, including the page URL, the browser you are using, and any error messages displayed. Screenshots or screen recordings can be very helpful in diagnosing the problem. Your reports help us maintain a smooth and functional website for all users.
+            </p>
+            <p class="text-workshop-gray">
+                Our technical team works diligently to resolve website issues promptly. We appreciate your patience as we investigate and implement solutions. Your feedback on technical glitches is invaluable for our continuous improvement efforts, ensuring a seamless online experience. We are committed to providing a reliable and accessible platform for all your woodworking needs. Reporting issues helps us identify and fix problems quickly, benefiting the entire woodHandcraft community.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 9: Privacy Policy Questions</h3>
+            <p class="text-workshop-gray">
+                For any questions or concerns regarding our Privacy Policy, how we collect, use, or store your personal data, or your data protection rights, please contact our privacy compliance officer. We are committed to transparency and protecting your personal information. We can provide clarification on data handling practices, cookie usage (as detailed on this page), and how you can exercise your rights, such as accessing or requesting deletion of your data. Your privacy is paramount to us, and we are here to address any inquiries you may have.
+            </p>
+            <p class="text-workshop-gray">
+                Understanding our data practices is crucial for your peace of mind. Our privacy officer can explain the legal bases for data processing, how we secure your information, and our policies on data retention. We welcome your questions as they help us ensure our practices are clear and align with your expectations. This contact point is dedicated to fostering trust and ensuring your understanding of how your data is managed responsibly by woodHandcraft.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 10: Terms of Service Clarifications</h3>
+            <p class="text-workshop-gray">
+                If you require clarification on any specific clause within our Terms of Service, please reach out to our legal and compliance team. While we cannot provide legal advice, we can explain the intent and implications of our terms regarding user conduct, intellectual property, liability, and other contractual agreements. Understanding these terms is essential for a harmonious relationship between you and woodHandcraft. We aim for clarity and fairness in all our policies.
+            </p>
+            <p class="text-workshop-gray">
+                This contact point is designed to help you navigate our legal framework. We can elaborate on sections such as user responsibilities, acceptable use of the Site, or the scope of our services. Your questions help us identify areas where our terms might be improved for better clarity. We believe that a well-understood agreement benefits all parties, and we are committed to ensuring our users are fully informed about their rights and obligations when interacting with woodHandcraft.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 11: Cookie Policy Inquiries</h3>
+            <p class="text-workshop-gray">
+                Should you have any specific questions about our Cookies Policy, the types of cookies we use, their purpose, or how you can manage your cookie preferences, please contact us. We can provide further details on how different categories of cookies function and their impact on your browsing experience. We are committed to providing transparent information about our use of cookies and respecting your choices regarding data collection.
+            </p>
+            <p class="text-workshop-gray">
+                This contact point is specifically for clarifying any aspects of this Cookies Policy. We can explain the difference between session and persistent cookies, first-party and third-party cookies, and the implications of accepting or declining certain cookie categories. Your inquiries help us ensure that our cookie practices are well-understood and that users can make informed decisions about their privacy settings on our Site.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 12: Partnership and Collaboration Opportunities</h3>
+            <p class="text-workshop-gray">
+                For businesses, artisans, or organizations interested in partnering with woodHandcraft for collaborations, bulk orders, or joint ventures, please contact our business development team. We are open to exploring opportunities that align with our brand values of craftsmanship, sustainability, and community. Provide a brief overview of your proposal, and our team will assess potential synergies and discuss next steps.
+            </p>
+            <p class="text-workshop-gray">
+                We are always looking for innovative ways to expand our reach and impact within the woodworking and crafting communities. Whether it's co-hosting workshops, developing exclusive product lines, or cross-promotional activities, we are keen to hear your ideas. This contact point is for strategic discussions that can lead to mutually beneficial relationships and growth for both parties.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 13: Media and Press Inquiries</h3>
+            <p class="text-workshop-gray">
+                Members of the media, journalists, or content creators seeking information about woodHandcraft for articles, interviews, or features should contact our public relations department. We can provide press kits, high-resolution images, company statements, and arrange interviews with our founders or expert artisans. We welcome opportunities to share our story, mission, and passion for woodworking with a wider audience.
+            </p>
+            <p class="text-workshop-gray">
+                Please specify your publication or platform, the nature of your inquiry, and your deadline. Our PR team is dedicated to facilitating timely and accurate information for media professionals. We are proud of our brand and eager to share our commitment to craftsmanship, sustainability, and empowering the woodworking community.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 14: Career Opportunities</h3>
+            <p class="text-workshop-gray">
+                For individuals interested in joining the woodHandcraft team, please visit our Careers page (if available) for current job openings. If you have specific questions about employment opportunities, internships, or our company culture, you may contact our Human Resources department. Please do not send unsolicited resumes to general inquiry emails; use the designated HR channel or application portal.
+            </p>
+            <p class="text-workshop-gray">
+                We are always looking for passionate and skilled individuals who share our values of craftsmanship, integrity, and a love for wood. Our HR team can provide insights into our hiring process, benefits, and the exciting growth opportunities within woodHandcraft. We foster a supportive and creative work environment where talent is nurtured and contributions are valued.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 15: Supplier and Vendor Inquiries</h3>
+            <p class="text-workshop-gray">
+                If you are a supplier of high-quality, ethically sourced wood, woodworking tools, or related materials and are interested in becoming a vendor for woodHandcraft, please contact our procurement team. We are always seeking reliable partners who align with our commitment to sustainability and quality. Provide details about your products, certifications (e.g., FSC), and pricing structure.
+            </p>
+            <p class="text-workshop-gray">
+                Our procurement team carefully vets all potential suppliers to ensure they meet our stringent standards for material quality, ethical sourcing, and environmental responsibility. We value long-term partnerships and fair trade practices. This contact point is crucial for expanding our network of trusted suppliers and ensuring the consistent quality of our products and kits.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 16: Feedback and Suggestions for Improvement</h3>
+            <p class="text-workshop-gray">
+                We highly value your feedback and suggestions for improving our website, products, services, or workshops. Your insights help us to continuously enhance the woodHandcraft experience. While we may not be able to respond to every suggestion individually, we assure you that all feedback is reviewed by the relevant teams for consideration. Please note that any suggestions provided may be used by woodHandcraft without compensation, as outlined in our Terms of Service.
+            </p>
+            <p class="text-workshop-gray">
+                This contact point is for constructive criticism, innovative ideas, or observations that can help us refine our offerings. We are committed to a culture of continuous improvement, and user feedback is a vital component of that process. Your input directly contributes to making woodHandcraft better for everyone.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 17: Reporting Abuse or Misconduct</h3>
+            <p class="text-workshop-gray">
+                If you encounter any content or user behavior on our Site that you believe violates our Terms of Service, promotes illegal activities, or constitutes harassment or abuse, please report it immediately. Your vigilance helps us maintain a safe and respectful community. Provide as much detail as possible, including usernames, specific content, and timestamps if applicable. All reports are treated with strict confidentiality.
+            </p>
+            <p class="text-workshop-gray">
+                We take all reports of abuse or misconduct seriously and will investigate promptly. Appropriate action will be taken in accordance with our policies, which may include content removal, user warnings, or account termination. This contact point is crucial for upholding the integrity and positive environment of the woodHandcraft platform.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 18: Accessibility Support</h3>
+            <p class="text-workshop-gray">
+                woodHandcraft is committed to making our website accessible to all users, including those with disabilities. If you encounter any accessibility barriers or have suggestions for improving the accessibility of our Site, please contact our accessibility support team. We welcome your feedback and are continuously working to enhance user experience for everyone.
+            </p>
+            <p class="text-workshop-gray">
+                Please describe the specific issue you are experiencing and the assistive technology you are using, if any. Your input helps us identify and implement necessary improvements to ensure our digital content is perceivable, operable, understandable, and robust for all. We strive to comply with relevant accessibility standards and guidelines.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 19: Marketing Opt-Out Requests</h3>
+            <p class="text-workshop-gray">
+                If you wish to opt-out of receiving marketing or promotional communications from woodHandcraft, you can do so by clicking the "unsubscribe" link at the bottom of any marketing email you receive. If you encounter any issues with the unsubscribe process, or prefer to opt-out manually, please contact our marketing team directly.
+            </p>
+            <p class="text-workshop-gray">
+                We respect your communication preferences and are committed to ensuring you only receive content you wish to receive. Please note that opting out of marketing emails will not affect transactional emails related to your orders or account. Your request will be processed promptly, typically within 5-7 business days.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 20: Data Access Requests (GDPR/CCPA)</h3>
+            <p class="text-workshop-gray">
+                Under data protection regulations like GDPR and CCPA, you may have the right to request access to the personal data we hold about you. To submit a data access request, please contact our privacy compliance officer. We will require verification of your identity to ensure the security of your data.
+            </p>
+            <p class="text-workshop-gray">
+                Upon successful verification, we will provide you with a copy of the personal data we have collected about you, in a portable and easily understandable format, as required by law. We aim to fulfill all legitimate requests within the legally mandated timeframe, typically 30 days.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 21: Data Correction Requests</h3>
+            <p class="text-workshop-gray">
+                If you believe that any personal data we hold about you is inaccurate, incomplete, or outdated, you have the right to request its correction. Please contact our privacy compliance officer with the details of the information you wish to update. We will verify your identity and promptly correct any erroneous data.
+            </p>
+            <p class="text-workshop-gray">
+                Maintaining accurate user data is important for providing effective services and ensuring proper communication. Your cooperation in keeping your information current is appreciated. We will confirm once the corrections have been applied to your records.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 22: Data Erasure Requests ("Right to Be Forgotten")</h3>
+            <p class="text-workshop-gray">
+                In certain circumstances, you may have the right to request the deletion or erasure of your personal data held by woodHandcraft. This is often referred to as the "right to be forgotten." To submit such a request, please contact our privacy compliance officer. We will assess your request based on applicable legal requirements and our data retention policies.
+            </p>
+            <p class="text-workshop-gray">
+                Please note that certain data may be retained for legal, accounting, or legitimate business purposes, even if an erasure request is granted. We will inform you of the outcome of your request and any data that we are legally obliged to retain. Your request will be handled with utmost care and in compliance with all relevant regulations.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 23: Data Portability Requests</h3>
+            <p class="text-workshop-gray">
+                You may have the right to receive your personal data in a structured, commonly used, and machine-readable format, and to transmit that data to another controller. This is known as data portability. To make a data portability request, please contact our privacy compliance officer. We will provide your data in an appropriate digital format.
+            </p>
+            <p class="text-workshop-gray">
+                This right applies to data that you have provided to us based on your consent or for the performance of a contract. We will ensure that the data is provided in a secure and accessible manner, facilitating your ability to transfer it to other services as you deem fit.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 24: Objecting to Data Processing</h3>
+            <p class="text-workshop-gray">
+                You have the right to object to the processing of your personal data by woodHandcraft in certain situations, particularly where the processing is based on legitimate interests or for direct marketing purposes. To exercise this right, please contact our privacy compliance officer, clearly stating the grounds for your objection.
+            </p>
+            <p class="text-workshop-gray">
+                We will cease processing your data for the objected purposes unless we can demonstrate compelling legitimate grounds for the processing which override your interests, rights, and freedoms, or for the establishment, exercise, or defense of legal claims. Your objection will be carefully considered and addressed.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 25: Withdrawing Consent</h3>
+            <p class="text-workshop-gray">
+                Where we rely on your consent to process your personal data, you have the right to withdraw that consent at any time. This includes consent for marketing communications, certain types of cookies, or specific data processing activities. To withdraw your consent, please contact our privacy compliance officer.
+            </p>
+            <p class="text-workshop-gray">
+                The withdrawal of consent will not affect the lawfulness of processing based on consent before its withdrawal. We will ensure that your data is no longer processed for the purposes for which consent was withdrawn. This empowers you to control your data preferences.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 26: Reporting Security Vulnerabilities</h3>
+            <p class="text-workshop-gray">
+                If you discover any potential security vulnerabilities on the woodHandcraft Site or in our systems, we encourage you to report them responsibly to our security team. Please provide detailed information about the vulnerability, including steps to reproduce it, and any potential impact. We appreciate responsible disclosure and will investigate all legitimate reports promptly.
+            </p>
+            <p class="text-workshop-gray">
+                We are committed to maintaining a secure online environment for our users. Your assistance in identifying and reporting vulnerabilities helps us strengthen our defenses and protect user data. We will acknowledge your report and keep you informed of our progress in addressing the issue.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 27: Copyright Infringement Claims</h3>
+            <p class="text-workshop-gray">
+                If you believe that any content on our Site infringes your copyright, please send a detailed notice of alleged infringement to our legal department. Your notice should include identification of the copyrighted work, identification of the infringing material, your contact information, and a statement of good faith belief.
+            </p>
+            <p class="text-workshop-gray">
+                We take intellectual property rights seriously and will investigate all legitimate claims of copyright infringement in accordance with applicable laws, such as the Digital Millennium Copyright Act (DMCA). We will take appropriate action, which may include removing or disabling access to the infringing material.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 28: Trademark Infringement Claims</h3>
+            <p class="text-workshop-gray">
+                If you believe that any content on our Site infringes your trademark rights, please send a detailed notice of alleged infringement to our legal department. Your notice should include identification of the trademark, identification of the infringing material, your contact information, and a statement of good faith belief.
+            </p>
+            <p class="text-workshop-gray">
+                We respect trademark rights and will investigate all legitimate claims of trademark infringement. Appropriate action will be taken, which may include removing or disabling access to the infringing material. We are committed to protecting intellectual property on our platform.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 29: Reporting Broken Links or Content Errors</h3>
+            <p class="text-workshop-gray">
+                Help us keep our Site in top shape by reporting any broken links, outdated information, or factual errors you encounter. Please provide the URL of the page where the issue is found and a brief description of the problem. Your attention to detail helps us maintain the quality and accuracy of our content.
+            </p>
+            <p class="text-workshop-gray">
+                Our content management team regularly reviews and updates the Site, but user reports are invaluable for catching issues quickly. We appreciate your assistance in ensuring a smooth and reliable browsing experience for all visitors.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 30: Workshop Feedback and Reviews</h3>
+            <p class="text-workshop-gray">
+                After participating in a woodHandcraft workshop, we encourage you to provide feedback and reviews. Your insights into the instructor, curriculum, facilities, and overall experience are crucial for our continuous improvement. You may receive an email requesting feedback after your workshop, or you can submit it directly via our contact form.
+            </p>
+            <p class="text-workshop-gray">
+                Your reviews help other aspiring woodworkers choose the right workshop and help us refine our educational offerings. We value honest and constructive feedback, which enables us to maintain high standards for all our learning experiences.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 31: Product Review Submissions</h3>
+            <p class="text-workshop-gray">
+                We invite you to share your experience with our handmade wooden products and DIY kits by submitting product reviews on our Site. Your reviews provide valuable insights for other customers and help us understand what you love about our items. You can typically submit a review directly on the product page.
+            </p>
+            <p class="text-workshop-gray">
+                Please ensure your reviews are honest, respectful, and relevant to the product. We reserve the right to moderate reviews to ensure they meet our content guidelines. Your contributions help build a trusted community and inform future product development.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 32: Newsletter Subscription Issues</h3>
+            <p class="text-workshop-gray">
+                If you are experiencing issues with subscribing to or unsubscribing from our newsletter, or if you are not receiving expected communications, please contact our marketing team. Provide the email address you used for subscription and a description of the problem.
+            </p>
+            <p class="text-workshop-gray">
+                We will investigate and resolve any technical issues to ensure you receive our latest news, product updates, and workshop announcements as intended, or that your unsubscribe request is processed correctly.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 33: Payment Processing Inquiries</h3>
+            <p class="text-workshop-gray">
+                For questions related to payment processing, billing errors, or issues with specific transactions, please contact our billing department. Provide your order number, the date of the transaction, and a clear description of the payment issue.
+            </p>
+            <p class="text-workshop-gray">
+                Our team will work with our secure payment gateways to investigate and resolve any discrepancies promptly. Your financial security is paramount, and we are committed to addressing all payment-related concerns with urgency and care.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 34: Wholesale Inquiries</h3>
+            <p class="text-workshop-gray">
+                Businesses interested in purchasing woodHandcraft products in bulk for retail or corporate gifting purposes should contact our wholesale department. Provide your business name, contact information, and a brief outline of your wholesale needs.
+            </p>
+            <p class="text-workshop-gray">
+                We offer competitive wholesale pricing and dedicated support for our business partners. Our team will provide you with our wholesale catalog, terms, and discuss how our handmade wooden goods can benefit your business.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 35: Educational Content Requests</h3>
+            <p class="text-workshop-gray">
+                If you have ideas for new DIY kit projects, workshop topics, or educational content you'd like to see on our blog or resource pages, please submit your suggestions. We are always looking for ways to expand our educational offerings and cater to the interests of our community.
+            </p>
+            <p class="text-workshop-gray">
+                Your input helps us create relevant and engaging learning materials for woodworkers of all skill levels. We value your insights into what topics would be most beneficial for your crafting journey.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 36: Community Forum Support (if applicable)</h3>
+            <p class="text-workshop-gray">
+                If woodHandcraft operates a community forum (or similar platform), and you require support with forum registration, posting guidelines, or moderation issues, please contact our community management team. They can assist with technical forum issues and address concerns about user interactions within the community space.
+            </p>
+            <p class="text-workshop-gray">
+                Our goal is to foster a positive and supportive environment for all members to share their woodworking projects, ask questions, and connect with fellow enthusiasts. Your reports help maintain the integrity of our community guidelines.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 37: Gift Card Inquiries</h3>
+            <p class="text-workshop-gray">
+                For questions regarding woodHandcraft gift cards, including purchasing, redemption, balance checks, or troubleshooting issues, please contact our customer service team. Provide the gift card number if applicable.
+            </p>
+            <p class="text-workshop-gray">
+                We can assist with all aspects of gift card usage, ensuring a smooth experience for both purchasers and recipients. Gift cards are a popular way to share the joy of woodworking, and we want to ensure they are easily usable.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 38: Corporate Workshop Bookings</h3>
+            <p class="text-workshop-gray">
+                Companies or organizations interested in booking private woodworking workshops for team-building events, employee engagement, or client appreciation should contact our corporate events team. We can tailor workshops to your group size, skill level, and specific objectives.
+            </p>
+            <p class="text-workshop-gray">
+                Provide details about your organization, preferred dates, and any specific themes or projects you have in mind. Our team will work with you to create a unique and memorable hands-on experience that fosters creativity and collaboration.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 39: Product Sourcing Inquiries</h3>
+            <p class="text-workshop-gray">
+                If you are a customer interested in learning more about the specific sourcing of a particular wood type used in our products, beyond what is provided in the product description, please contact our sustainability and sourcing team. We are committed to transparency in our supply chain.
+            </p>
+            <p class="text-workshop-gray">
+                We can provide additional details on the origin, certifications, and sustainable forestry practices associated with the materials in your woodHandcraft items. This allows you to deepen your appreciation for the ethical journey of your product.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Point 40: General Feedback on Customer Service Experience</h3>
+            <p class="text-workshop-gray">
+                We strive for excellence in customer service. If you have general feedback about your interactions with our support team, whether positive or constructive, please share it with us. Your input helps us evaluate and improve our service quality.
+            </p>
+            <p class="text-workshop-gray">
+                This feedback helps us recognize outstanding service and identify areas for training or process improvement. We are dedicated to providing a helpful, courteous, and efficient support experience for every woodHandcraft customer.
+            </p>
+
+
+            <h2 class="text-3xl font-bold text-classic-pine-brown mb-4">6. Changes to This Cookies Policy</h2>
+            <p class="text-workshop-gray mb-4">
+                We may update our Cookies Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Cookies Policy on this page and updating the "Last updated" date at the top of this policy. You are advised to review this Cookies Policy periodically for any changes. Changes to this Cookies Policy are effective when they are posted on this page.
+            </p>
+
+            <h2 class="text-3xl font-bold text-classic-pine-brown mb-4">7. Contact Us</h2>
+            <p class="text-workshop-gray mb-4">
+                If you have any questions about this Cookies Policy, please contact us:
+            </p>
+            <ul class="list-disc ml-6 text-workshop-gray">
+                <li>By email: <a href="mailto:info@woodhandcraft.com" class="text-amber-accent hover:underline">info@woodhandcraft.com</a></li>
+                <li>By mail: 123 Timber Lane, Craftsville, CA 90210, USA</li>
+                <li>By phone: +1 (555) 123-4567</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-classic-pine-brown text-white py-10 rounded-t-lg shadow-inner">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <!-- Address and Contact -->
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold mb-2">woodHandcraft</h3>
+                <p class="text-sm">123 Timber Lane, Craftsville, CA 90210, USA</p>
+                <p class="text-sm">Email: info@woodhandcraft.com</p>
+                <p class="text-sm">Phone: +1 (555) 123-4567</p>
+            </div>
+
+            <!-- Footer Navigation -->
+            <nav class="mb-6 md:mb-0">
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-lg font-medium">
+                    <li><a href="privacy.html" class="hover:text-amber-accent transition-colors duration-200">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-amber-accent transition-colors duration-200">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="hover:text-amber-accent transition-colors duration-200">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="hover:text-amber-accent transition-colors duration-200">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Copyright -->
+            <div>
+                <p class="text-sm">&copy; 2025 woodHandcraft. All rights reserved.</p>
+                <p class="text-xs mt-1">Pure Craftsmanship. Real Wood.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Dialog -->
+    <div id="cookie-consent-dialog" class="hidden">
+        <p>We use cookies to improve your experience on our site. By continuing to browse, you agree to our use of cookies. For more details, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+        <div class="buttons">
+            <button id="accept-cookies">Accept All Cookies</button>
+            <button id="decline-cookies">Decline All Cookies</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsentDialog = document.getElementById('cookie-consent-dialog');
+            const acceptCookiesBtn = document.getElementById('accept-cookies');
+            const declineCookiesBtn = document.getElementById('decline-cookies');
+
+            // Check if cookie consent has been given
+            const consentGiven = localStorage.getItem('woodhandcraft_cookie_consent');
+
+            if (!consentGiven) {
+                cookieConsentDialog.classList.remove('hidden');
+            }
+
+            acceptCookiesBtn.addEventListener('click', function() {
+                localStorage.setItem('woodhandcraft_cookie_consent', 'accepted');
+                cookieConsentDialog.classList.add('hidden');
+                // You can add logic here to enable analytics/tracking cookies
+                console.log('Cookies accepted.');
+            });
+
+            declineCookiesBtn.addEventListener('click', function() {
+                localStorage.setItem('woodhandcraft_cookie_consent', 'declined');
+                cookieConsentDialog.classList.add('hidden');
+                // You can add logic here to disable non-essential cookies
+                console.log('Cookies declined.');
+            });
+        });
+    </script>
+
+</body>
+</html>

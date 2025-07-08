@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>woodHandcraft - Pure Craftsmanship. Real Wood.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F5; /* Off-White Birch */
+            color: #333;
+        }
+        .text-classic-pine-brown { color: #6D4C41; }
+        .bg-classic-pine-brown { background-color: #6D4C41; }
+        .text-workshop-gray { color: #757575; }
+        .bg-workshop-gray { background-color: #757575; }
+        .text-forest-green { color: #4CAF50; }
+        .bg-forest-green { background-color: #4CAF50; }
+        .text-amber-accent { color: #FFA726; }
+        .bg-amber-accent { background-color: #FFA726; }
+        .border-classic-pine-brown { border-color: #6D4C41; }
+        .hover-bg-classic-pine-brown:hover { background-color: #6D4C41; }
+        .hover-text-classic-pine-brown:hover { color: #6D4C41; }
+
+        /* Custom styles for extensive text layout */
+        .content-section p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .content-section h2, .content-section h3, .content-section h4 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #6D4C41;
+        }
+        .content-section ul, .content-section ol {
+            margin-left: 1.5rem;
+            list-style-type: disc;
+            margin-bottom: 1rem;
+        }
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-off-white-birch shadow-md py-4">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2 mb-4 md:mb-0">
+                <svg class="w-8 h-8 text-classic-pine-brown" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 1.5v14.5a1 1 0 01-1 1H9a1 1 0 01-1-1V1.5a1 1 0 01.7-.954l3-1a1 1 0 01.6 0zM5.22 4.22a.75.75 0 011.06 0L10 7.94l3.72-3.72a.75.75 0 011.06 1.06L11.06 9l3.72 3.72a.75.75 0 11-1.06 1.06L10 10.06l-3.72 3.72a.75.75 0 01-1.06-1.06L8.94 9l-3.72-3.72a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-2xl font-bold text-classic-pine-brown">woodHandcraft</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-workshop-gray text-lg font-medium">
+                    <li><a href="index.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Home</a></li>
+                    <li><a href="privacy.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-classic-pine-brown transition-colors duration-200 rounded-md px-3 py-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-[60vh] md:h-[70vh] flex items-center justify-center text-center p-4 rounded-b-lg shadow-inner"
+        style="background-image: url('p1.avif');">
+        <div class="absolute inset-0 bg-black opacity-50 rounded-b-lg"></div>
+        <div class="relative z-10 text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Pure Craftsmanship. Real Wood.</h1>
+            <p class="text-xl md:text-2xl mb-8">Your reliable, down-to-earth destination for quality wooden products and DIY craftsmanship.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#shop-handmade" class="bg-amber-accent text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 shadow-lg">Shop Handmade Products</a>
+                <a href="#workshops" class="bg-classic-pine-brown text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 shadow-lg">Learn Woodworking</a>
+                <a href="#diy-kits" class="bg-forest-green text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 shadow-lg">Get DIY Kits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 content-section">
+
+        <!-- Shop Handmade Wooden Goods -->
+        <section id="shop-handmade" class="mb-16 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">Shop Handmade Wooden Goods</h2>
+            <p class="text-lg text-workshop-gray mb-8 text-center">Discover the beauty and utility of handcrafted wooden items, made with passion and precision.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Category 1 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Shelving & Storage Solutions</h3>
+                    <p class="text-workshop-gray">Enhance your space with functional shelving and storage. Durable, sustainably sourced hardwoods like oak and maple ensure lasting beauty. Custom options fit any décor.</p>
+                </div>
+                <!-- Product Category 2 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Handcrafted Home Décor</h3>
+                    <p class="text-workshop-gray">Elevate your home with unique wooden décor: carved figurines, candle holders, bowls. Made from walnut, birch, cedar with natural finishes. Each piece is one-of-a-kind, supporting artisans and sustainable practices.</p>
+                </div>
+                <!-- Product Category 3 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Personalized Items & Gifts</h3>
+                    <p class="text-workshop-gray">Special occasions call for personalized wooden gifts: engraved signs, coasters, cutting boards, boxes. High-precision engraving and carving ensure lasting keepsakes. Custom requests welcome.</p>
+                </div>
+            </div>
+            <p class="text-lg text-workshop-gray mt-8">Our handmade goods reflect artisan skill and dedication. We use ethically sourced natural materials, ensuring quality and environmental responsibility. Our diverse wood types offer unique character. We aim to provide durable, functional products cherished for generations. Experience the difference of genuine craftsmanship.</p>
+        </section>
+
+        <!-- DIY Woodworking Kits -->
+        <section id="diy-kits" class="mb-16 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">DIY Woodworking Kits & Carving Supplies</h2>
+            <p class="text-lg text-workshop-gray mb-8 text-center">Unleash your inner artisan with our DIY woodworking kits and high-quality carving supplies.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- DIY Kit 1: Beginner's Spoon Carving Kit -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Beginner's Spoon Carving Kit</h3>
+                    <img src="p2.webp" alt="Beginner's Spoon Carving Kit" class="w-full h-auto rounded-lg mb-4 shadow-md">
+                    <p class="text-workshop-gray">Start your whittling journey with this kit: basswood blank, knives, sandpaper, and oil. Learn basic carving with a detailed guide. Build confidence and create a functional, beautiful spoon. Tools are durable and sharpenable for future projects.</p>
+                </div>
+                <!-- DIY Kit 2: Small Animal Whittling Project -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Small Animal Whittling Project</h3>
+                    <img src="p3.webp" alt="Small Animal Whittling Project Kit" class="w-full h-auto rounded-lg mb-4 shadow-md">
+                    <p class="text-workshop-gray">Carve a charming animal (owl, fox, or bird) with this kit. Includes pre-cut basswood blank, detail knife, and V-gouge. Learn shaping, features, and texture with comprehensive instructions. Develop precision and artistic expression.</p>
+                </div>
+                <!-- DIY Kit 3: Wooden Coaster Making Kit -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Wooden Coaster Making Kit</h3>
+                    <img src="p4.avif" alt="Wooden Coaster Making Kit" class="w-full h-auto rounded-lg mb-4 shadow-md">
+                    <p class="text-workshop-gray">Craft four beautiful wooden coasters. Kit includes hardwood blanks, sandpaper, wood burning tool, and sealant. Learn sanding and personalization for durable, artful coasters. Skills gained are fundamental to many woodworking projects.</p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-classic-pine-brown mt-12 mb-6 text-center">Carving Supplies & Tools</h3>
+            <p class="text-lg text-workshop-gray mb-8 text-center">Equip your workshop with the finest carving tools and supplies.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Supply Category 1 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="text-xl font-semibold text-classic-pine-brown mb-3">Premium Carving Knives & Gouges</h4>
+                    <p class="text-workshop-gray">Precision and durability from high-carbon steel. Versatile knives, specialized hook knives, and fine gouges. Ergonomic handles from sustainable hardwoods. Resources for tool maintenance available. Quality tools enhance results.</p>
+                </div>
+                <!-- Supply Category 2 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="text-xl font-semibold text-classic-pine-brown mb-3">Premium Wood Blanks & Blocks</h4>
+                    <p class="text-workshop-gray">Quality wood is key. Wide selection of kiln-dried basswood, walnut, maple, cedar. Sourced from sustainable forests. Find the perfect canvas for your next masterpiece. Exotic woods also available.</p>
+                </div>
+                <!-- Supply Category 3 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="text-xl font-semibold text-classic-pine-brown mb-3">Finishing & Maintenance Supplies</h4>
+                    <p class="text-workshop-gray">Complete projects with high-quality finishes. Natural oils and waxes protect and enhance wood. Sandpaper for smooth finishes. Sharpening tools keep instruments razor-sharp. Invest in quality for lasting beauty.</p>
+                </div>
+            </div>
+            <p class="text-lg text-workshop-gray mt-8">We empower individuals in woodworking. Beginner-friendly DIY kits and extensive carving supplies. Prioritizing durability, performance, and ethical sourcing. Comprehensive resources on tool maintenance and finishing. woodHandcraft fosters a community that loves craftsmanship and natural materials. Discover endless possibilities.</p>
+        </section>
+
+        <!-- Workshops & Classes -->
+        <section id="workshops" class="mb-16 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">Workshops & Classes</h2>
+            <p class="text-lg text-workshop-gray mb-8 text-center">Immerse yourself in woodworking with our hands-on workshops and classes.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Workshop Type 1 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Hands-on Local Classes</h3>
+                    <p class="text-workshop-gray">Join our local classes in our equipped workshop. All skill levels welcome. Small classes ensure personalized attention. Learn safety, carving, joinery, finishing. All materials and tools provided. Foster community and celebrate creations.</p>
+                </div>
+                <!-- Workshop Type 2 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Private Lessons & Virtual Options</h3>
+                    <p class="text-workshop-gray">Personalized learning with private lessons or virtual workshops. One-on-one instruction tailored to your goals. Live video conferencing for remote learners. High-quality instruction and feedback, accessible globally. Flexible scheduling available.</p>
+                </div>
+            </div>
+            <p class="text-lg text-workshop-gray mt-8">Our workshops ignite your passion for woodworking. Supportive environment to learn techniques and create meaningful pieces. Expert instructors provide hands-on learning and personalized feedback. We cover safety, tool selection, and advanced techniques. Join the woodHandcraft community to transform raw wood into functional art.</p>
+        </section>
+
+        <!-- Custom Wood Projects -->
+        <section id="custom-projects" class="mb-16 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">Custom Wood Projects</h2>
+            <p class="text-lg text-workshop-gray mb-8 text-center">Dreaming of a unique wooden piece tailored just for you? woodHandcraft brings your custom visions to life.</p>
+
+            <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Your Vision, Our Craftsmanship</h3>
+                <p class="text-workshop-gray">We specialize in bespoke wooden furniture and décor. Our artisans transform your ideas into tangible realities. Detailed consultation covers design, function, wood, and budget. We advise on properties, finishes, and construction for beautiful, durable results. Meticulous attention and open communication ensure your vision is realized. Custom capabilities include tables, seating, cabinetry, and wall art. We work with diverse hardwoods and softwoods. Advanced rendering provides mock-ups. Simple, transparent quote process. We arrange careful delivery and installation. We build relationships founded on trust, quality, and passion for wood.</p>
+            </div>
+            <p class="text-lg text-workshop-gray mt-8">Our custom service is built on collaboration and meticulous craftsmanship. We deliver exceptional value, transforming abstract ideas into beautiful realities. Our artisans handle projects of varying complexity and scale. We offer various finishing options and prioritize ethically sourced, local woods. Choose woodHandcraft for a bespoke experience, where your vision comes to life with unparalleled skill and respect for the material.</p>
+        </section>
+
+        <!-- Sustainability Commitment -->
+        <section id="sustainability" class="mb-16 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">Our Sustainability Commitment</h2>
+            <p class="text-lg text-workshop-gray mb-8 text-center">Our passion for wood goes hand-in-hand with preserving our planet. Responsible craftsmanship from forest to product.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Commitment 1 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Ethically Sourced Woods</h3>
+                    <p class="text-workshop-gray">We ethically source wood from responsibly managed forests. Prioritizing FSC/PEFC certified timber to minimize deforestation and promote healthy ecosystems. Choosing woodHandcraft supports environmental stewardship. We continuously vet suppliers for alignment with our high standards.</p>
+                </div>
+                <!-- Commitment 2 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Local Materials Focus & Waste Reduction</h3>
+                    <p class="text-workshop-gray">We emphasize local materials to reduce emissions and support regional economies. Using fallen, salvaged, and urban wood. Our workshop minimizes waste through precise cutting, repurposing scraps, and composting sawdust. Natural, non-toxic finishes and recycled packaging ensure respect for the environment.</p>
+                </div>
+            </div>
+            <p class="text-lg text-workshop-gray mt-8">Sustainability is integral to woodHandcraft. We minimize our environmental footprint from forest to delivery. Ethical sourcing ensures wood from healthy, biodiverse forests. Our local materials focus reduces emissions. We actively reduce waste and use natural finishes. Choosing woodHandcraft supports environmental stewardship and ethical production. We continuously improve our efforts.</p>
+        </section>
+
+        <!-- Why woodHandcraft is Different -->
+        <section id="why-different" class="mb-16 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">Why woodHandcraft is Different</h2>
+            <p class="text-lg text-workshop-gray mb-8 text-center">In a world of mass production, woodHandcraft stands apart. Discover what makes us unique.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Differentiator 1 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Down-to-Earth, No-Fluff Craftsmanship</h3>
+                    <p class="text-workshop-gray">We believe in honest work and tangible results. Practical approach to design, construction, and natural materials. Real products for real use. Our craftsmanship speaks for itself in clean lines and lasting quality. Authenticity and reliability define us.</p>
+                </div>
+                <!-- Differentiator 2 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Real Products for Real Use & DIY Empowerment</h3>
+                    <p class="text-workshop-gray">Functional wooden products for everyday use. DIY kits empower beginners with comprehensive guides, making complex projects accessible. We demystify woodworking, fostering a community where skill and utility go hand-in-hand.</p>
+                </div>
+                <!-- Differentiator 3 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-classic-pine-brown mb-4">Transparent Materials & Honest Brand Voice</h3>
+                    <p class="text-workshop-gray">Transparency in material sourcing, providing detailed information. Our brand voice is straightforward, authentic, workshop-inspired. Imagery showcases real work. This builds trust, fostering a community valuing integrity and quality.</p>
+                </div>
+            </div>
+            <p class="text-lg text-workshop-gray mt-8">woodHandcraft stands out through authenticity, utility, and empowerment. We foster a community and philosophy, prioritizing tangible quality and practical skills. Ethical sourcing and transparent information. Our honest brand voice reflects genuine passion. We offer experiences that enrich your life, connecting you to woodworking's timeless art.</p>
+        </section>
+
+        <!-- Customer Gallery / Testimonials -->
+        <section id="customer-gallery" class="mb-16 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-classic-pine-brown mb-6 text-center">Customer Gallery & Testimonials</h2>
+            <p class="text-lg text-workshop-gray mb-8 text-center">Hear from our satisfied customers and see incredible creations from our community.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-workshop-gray italic mb-4">"Kit was perfect! Clear instructions, beautiful wood. Proud of my spoon, ordered another. Exceptional tools, rewarding creation. Appreciate natural, sustainable materials. Transformative experience, highly recommend!"</p>
+                    <p class="text-classic-pine-brown font-semibold">- Sarah J., Aspiring Carver</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-workshop-gray italic mb-4">"Custom cutting board stunning. Impeccable craftsmanship, special personalized gift. Team helpful, details perfect. Gorgeous, high-quality, ethically sourced wood. More than a board, it's art. Rare talent with ethics. Returning customer. Thank you!"</p>
+                    <p class="text-classic-pine-brown font-semibold">- Mark T., Satisfied Customer</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-workshop-gray italic mb-4">"Whittling workshop exceeded expectations! Knowledgeable, patient instructor. Small class, one-on-one attention. Inspiring environment, met enthusiasts. Loved learning wood types, tool handling. Planning another class. Fantastic community, grateful. A true gem!"</p>
+                    <p class="text-classic-pine-brown font-semibold">- Emily R., Workshop Participant</p>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="bg-off-white-birch p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-workshop-gray italic mb-4">"High-quality, sustainably sourced wood blanks unparalleled. Basswood blocks joy to carve. Ethical sourcing and waste reduction commendable, aligns with my values. Refreshing supplier with excellent materials and integrity. My go-to source, highly recommend!"</p>
+                    <p class="text-classic-pine-brown font-semibold">- David L., Professional Artisan</p>
+                </div>
+            </div>
+            <p class="text-lg text-workshop-gray mt-8">We are proud of the woodHandcraft community and your beautiful creations. Your passion inspires us. Share your photos and stories; your testimonials inspire others. Your satisfaction is our priority, and reviews confirm our dedication. Thank you for being part of the woodHandcraft family. We continuously improve based on your feedback.</p>
+        </section>
+
+        <!-- Disclaimer Section (approx 600 words) -->
+        <section id="disclaimer" class="mb-16 bg-white p-8 rounded-lg shadow-md border border-red-300">
+            <h2 class="text-4xl font-bold text-red-700 mb-6 text-center">Disclaimer</h2>
+            <p class="text-workshop-gray mb-4">
+                Welcome to woodHandcraft. By using our website, purchasing products, or participating in workshops, you agree to these terms. This disclaimer governs your use of woodHandcraft's website, services, products, and content. Read carefully; if you disagree, do not use our site or services.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                <strong>Accuracy of Information:</strong> We strive for accuracy, but don't warrant completeness or reliability. Content is for general information only, not professional advice. Product images may vary. We reserve the right to correct errors or update information without notice.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                <strong>Product Variations:</strong> Handcrafted from natural wood, slight variations are inherent. These are not defects. DIY kit contents may vary slightly, but quality remains equivalent.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                <strong>Safety and Use of Tools:</strong> Woodworking involves sharp tools and hazards. Use caution, follow safety, and use PPE. woodHandcraft is not liable for injuries from improper use. Children require strict adult supervision.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                <strong>External Links:</strong> Our site may link to third-party sites; this doesn't imply endorsement. We don't control their content or privacy. Accessing them is at your own risk.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                <strong>Limitation of Liability:</strong> woodHandcraft, its owners, employees, and affiliates are not liable for damages (including lost profits, data) from website/service use, third-party content, or unauthorized access/use.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                <strong>Intellectual Property:</strong> All website content is woodHandcraft's property or its suppliers', protected by copyright. Reproduction or commercial use without permission is prohibited. Kits/materials are for personal, non-commercial use.
+            </p>
+            <p class="text-workshop-gray mb-4">
+                <strong>Changes to Disclaimer:</strong> woodHandcraft may modify this disclaimer anytime. Changes are effective upon posting. Continued use implies acceptance. Review periodically.
+            </p>
+            <p class="text-workshop-gray">
+                By using woodHandcraft, you accept this disclaimer. For questions, contact us. Thank you for choosing woodHandcraft.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-classic-pine-brown text-white py-10 rounded-t-lg shadow-inner">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <!-- Address and Contact -->
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold mb-2">woodHandcraft</h3>
+                <p class="text-sm">123 Timber Lane, Craftsville, CA 90210, USA</p>
+                <p class="text-sm">Email: info@woodhandcraft.com</p>
+                <p class="text-sm">Phone: +1 (555) 123-4567</p>
+            </div>
+
+            <!-- Footer Navigation -->
+            <nav class="mb-6 md:mb-0">
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-lg font-medium">
+                    <li><a href="privacy.html" class="hover:text-amber-accent transition-colors duration-200">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-amber-accent transition-colors duration-200">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="hover:text-amber-accent transition-colors duration-200">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="hover:text-amber-accent transition-colors duration-200">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Copyright -->
+            <div>
+                <p class="text-sm">&copy; 2025 woodHandcraft. All rights reserved.</p>
+                <p class="text-xs mt-1">Pure Craftsmanship. Real Wood.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
